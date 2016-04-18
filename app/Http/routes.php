@@ -31,9 +31,11 @@ Route::post('/admin/color/create', ['as'=>'color.create', 'uses'=>'ColorCrudCont
 Route::delete('/admin/color/delete/{id?}',['as'=>'color.delete', 'uses'=>'ColorCrudController@destroy']);
 
 // RUTAS DEL MODULO MARCA
-
 Route::resource('admin/marca/', 'MarcaCrudController');
 Route::get('/admin/marca/{id}/edit', ['as'=>'admin.marca.edit', 'uses'=>'MarcaCrudController@edit']);
 Route::put('/admin/marca/{id}', ['as'=>'admin.marca.update', 'uses'=>'MarcaCrudController@update']);
 Route::delete('/admin/marca/{id}', ['as'=>'admin.marca.delete', 'uses'=>'MarcaCrudController@destroy']);
+
+// RUTAS DEL MODULO MODELO
+Route::resource('admin/modelo', 'ModeloCrudController');
 

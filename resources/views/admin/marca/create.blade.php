@@ -3,7 +3,7 @@
 @section('body')
 	<div class="row">
 	    <div class="col-lg-12">
-	        <h5 class="page-header">Crear nuevo registro de Marcas</h5>
+	        <h1 class="page-header">Crear nuevo registro de Marcas</h1>
 	    </div>
 	    <!-- /.col-lg-12 -->
 	</div>

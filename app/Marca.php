@@ -18,8 +18,8 @@ class Marca extends Model
 
 	// Has many
 
-	// public function modelo() {
-	// 	return $this->hasMany('App\Modelo');
-	// }
+	public function modelo() {
+		return $this->hasMany('App\Modelo', 'Marca_Cod_Marca', 'Cod_Marca');
+	}
 
 }

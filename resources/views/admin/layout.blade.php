@@ -109,7 +109,7 @@
                                          </li>
                                      @elseif($codigo_modulo == 6)
                                         <li>
-                                             <a href="index.html"><i class="fa fa-road fa-fw"></i> Modelo</a>
+                                             <a href="{{route('admin.modelo.index')}}"><i class="fa fa-road fa-fw"></i> Modelo</a>
                                          </li>
                                      @elseif($codigo_modulo == 7)
                                         <li>
