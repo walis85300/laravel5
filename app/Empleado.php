@@ -22,10 +22,16 @@ class Empleado extends Model implements AuthenticatableContract
 
     protected $visible = ['Cedula', 'Nombre', 'Apellido'];
 
+    protected $fillable = ['Cedula', 'Nombre', 'Apellido', 'Direccion', 'Telefono', 'Jefe', 'Cargo_Cod_Cargo', 'email', 'password'];
+
     // Has Many
     public function roles_empleado() {
     	// primer parametro: como se llama en la otra tabla
     	// segundo parametro: somo se llama en esta tabla 
     	return $this->hasMany('App\Roles_Empleado', 'Empleado_Cedula', 'Cedula');
+    }
+
+    public function cargo() {
+        return $this->belongsTo('App\Cargo', 'Cargo_Cod_Cargo', 'Cod_Cargo');
     }
 }

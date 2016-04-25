@@ -39,7 +39,7 @@ class WelcomeAdminController extends Controller
             Debugbar::addMessage('algo paso');
         }
 
-        return view('loginAdmin');
+        return redirect()->back()->with('error', 'Verifique sus datos');
 
     }
 
