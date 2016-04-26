@@ -34,17 +34,6 @@
 
 <body>
 
-    @if(Session::has('error'))
-    <div class="container">
-        <div class="row">
-            <div class="alert alert-danger alert-dismissable">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                {{Session::get('error')}}
-            </div>
-        </div>
-    </div>
-    @endif
-
     <div class="container">
         <div class="row text-center">
             <h1>Multiservicios Orlando</h1>

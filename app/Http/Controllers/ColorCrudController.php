@@ -66,7 +66,7 @@ class ColorCrudController extends Controller
 
         // return view('welcome');
 
-        return redirect()->intended('admin/color/all')->with('success', 'Se ha guardado con éxito');
+        return redirect()->intended('admin/color/all');
 
     }
 

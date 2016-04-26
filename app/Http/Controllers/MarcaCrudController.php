@@ -67,7 +67,7 @@ class MarcaCrudController extends Controller
 
         $marca->save();
 
-        return redirect()->intended('admin/marca')->with('success', 'Se ha guardado con éxito');
+        return redirect()->intended('admin/marca');
     }
 
     /**

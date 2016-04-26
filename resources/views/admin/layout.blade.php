@@ -87,9 +87,13 @@
                                 @foreach($rol->rol->roles_modulo as $roles_modulo)
                                     {{--*/ $codigo_modulo = $roles_modulo->Modulos_codigo /*--}}
 
-                                     @if($codigo_modulo == 2)
+                                    @if($codigo_modulo == 1)
                                         <li>
-                                             <a href="{{route('admin.empleado.index')}}"><i class="fa fa-group fa-fw"></i> Empleados</a>
+                                             <a href="index.html"><i class="fa fa-car fa-fw"></i> Vehículos</a>
+                                         </li>
+                                     @elseif($codigo_modulo == 2)
+                                        <li>
+                                             <a href="index.html"><i class="fa fa-group fa-fw"></i> Empleados</a>
                                          </li>          
                                     @elseif($codigo_modulo == 3)
                                         <li>
@@ -131,22 +135,6 @@
        
 
         <div id="page-wrapper">
-            @if(Session::has('success'))
-            <div class="row">
-                <div class="alert alert-success alert-dismissable">
-                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                    {{Session::get('success')}}
-                </div>
-            </div>
-            @endif
-            @if(Session::has('error'))
-            <div class="row">
-                <div class="alert alert-danger alert-dismissable">
-                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                    {{Session::get('error')}}
-                </div>
-            </div>
-            @endif
             @yield('body')
         </div>
         <!-- /#page-wrapper -->
