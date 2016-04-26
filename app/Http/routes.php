@@ -39,3 +39,7 @@ Route::delete('/admin/marca/{id}', ['as'=>'admin.marca.delete', 'uses'=>'MarcaCr
 // RUTAS DEL MODULO MODELO
 Route::resource('admin/modelo', 'ModeloCrudController');
 
+// RUTAS DEL MODULO DE EMPLEADO
+
+Route::resource('admin/empleado','EmpleadosCrudController');
+

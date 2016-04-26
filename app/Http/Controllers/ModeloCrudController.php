@@ -77,7 +77,7 @@ class ModeloCrudController extends Controller
 
         $modelo->save();
 
-        return redirect()->intended('admin/modelo');
+        return redirect()->intended('admin/modelo')->with('success', 'Se ha guardado con éxito');
     }
 
     /**
