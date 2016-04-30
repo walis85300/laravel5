@@ -22,7 +22,7 @@
 	                                <label>Descripción del color</label>
 	                                <input class="form-control" autofocus name="descripcion" required>
 	                                <p class="help-block">Fuxia melocotón</p>
-	                            </div>	                            
+	                            </div>
 	                            <button type="submit" class="btn btn-success">Aceptar</button>
 	                        </form>
 	                    </div>
